@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BagoesWahyuUntoro - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">BAGOESWAHYUUNTORO</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="home" class="hero">
+    <div class="container hero-content reveal">
+      <div class="hero-text">
+        <h1>BAGOESWAHYUUNTORO</h1>
+        <h2 class="typing">Front-End Developer & UI/UX Enthusiast</h2>
+        <p>
+          Saya seorang mahasiswa atau calon developer yang antusias membuat pengalaman digital
+          yang menarik, responsif, dan mudah digunakan. Fokus pada front-end development
+          dan desain UI/UX.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Go To Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-card">
+          <img src="/Halaman pertama/Profil/bagoes.jpg" alt="Avatar Bagoes">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span>HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <span>CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <span>JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <span>React</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <span>Tailwind CSS</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-card">
+          <span>Git & GitHub</span>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="js">JavaScript</button>
+        <button data-filter="react">React</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <h3>Project 1</h3>
+          <p>Website portfolio sederhana dengan HTML, CSS, dan JS.</p>
+          <a href="#" class="btn-secondary">Lihat</a>
+        </div>
+        <div class="project-card" data-category="js">
+          <h3>Project 2</h3>
+          <p>Aplikasi To-Do List interaktif dengan JavaScript.</p>
+          <a href="#" class="btn-secondary">Lihat</a>
+        </div>
+        <div class="project-card" data-category="react">
+          <h3>Project 3</h3>
+          <p>Landing page modern menggunakan React.</p>
+          <a href="#" class="btn-secondary">Lihat</a>
+        </div>
+        <div class="project-card" data-category="web">
+          <h3>Project 4</h3>
+          <p>Blog sederhana HTML & CSS.</p>
+          <a href="#" class="btn-secondary">Lihat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container reveal">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="from_name" placeholder="Nama Anda" required>
+        <input type="email" name="from_email" placeholder="Email Anda" required>
+        <textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+      <p id="form-status" class="form-status"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> BagoesWahyuUntoro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
