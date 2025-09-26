@@ -96,18 +96,19 @@ filterBtns.forEach(btn => {
 /* ============================= */
 /* EmailJS Contact Form          */
 /* ============================= */
-const SERVICE_ID = "service_23790fp";   // ganti dengan milikmu
+const SERVICE_ID = "service_8555wsk";   // ganti dengan milikmu
 const TEMPLATE_ID = "template_67fqj64"; // ganti dengan milikmu
-const PUBLIC_KEY = "mjsd1M9pgFcwyWDVC"; // ganti dengan milikmu
+const PUBLIC_KEY = "uaj7LbIhkd7rxmKct"; // ganti dengan milikmu
 
 // Pastikan EmailJS sudah dimuat
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof emailjs !== "undefined") {
     emailjs.init(PUBLIC_KEY);
   } else {
-    console.error("EmailJS belum dimuat. Pastikan script CDN sudah ditambahkan di index.html");
+    console.error("EmailJS belum dimuat.");
   }
 });
+
 
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
