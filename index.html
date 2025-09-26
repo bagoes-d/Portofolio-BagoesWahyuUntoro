@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BagoesWahyuUntoro - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk icon sosial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -49,41 +51,31 @@
 
   <!-- Skills Section -->
   <section id="skills" class="skills">
-    <div class="container reveal">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <span>HTML5</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-        </div>
-        <div class="skill-card">
-          <span>CSS3</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-        </div>
-        <div class="skill-card">
-          <span>JavaScript</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-        </div>
-        <div class="skill-card">
-          <span>React</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-        </div>
-        <div class="skill-card">
-          <span>Tailwind CSS</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
-        </div>
-        <div class="skill-card">
-          <span>Git & GitHub</span>
-          <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
-        </div>
-      </div>
-    </div>
+    <div class="skills-tags">
+  <button class="skill-btn html">HTML</button>
+  <button class="skill-btn css">CSS</button>
+  <button class="skill-btn js">JavaScript</button>
+  <button class="skill-btn react">React</button>
+  <button class="skill-btn tailwind">Tailwind</button>
+  <button class="skill-btn git">Git & GitHub</button>
+</div>
+
   </section>
+
+  <!-- Social Icons -->
+  <div class="social-icons reveal">
+    <i class="fab fa-github"></i>
+    <i class="fab fa-google"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-spotify"></i>
+    <i class="fab fa-windows"></i>
+    <i class="fab fa-apple"></i>
+  </div>
 
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container reveal">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
       <div class="project-filters">
         <button data-filter="all" class="active">All</button>
         <button data-filter="web">Web</button>
@@ -92,21 +84,25 @@
       </div>
       <div class="projects-grid">
         <div class="project-card" data-category="web">
+          <img src="img/project1.png" alt="Project 1">
           <h3>Project 1</h3>
           <p>Website portfolio sederhana dengan HTML, CSS, dan JS.</p>
           <a href="#" class="btn-secondary">Lihat</a>
         </div>
         <div class="project-card" data-category="js">
+          <img src="img/project2.png" alt="Project 2">
           <h3>Project 2</h3>
           <p>Aplikasi To-Do List interaktif dengan JavaScript.</p>
           <a href="#" class="btn-secondary">Lihat</a>
         </div>
         <div class="project-card" data-category="react">
+          <img src="img/project3.png" alt="Project 3">
           <h3>Project 3</h3>
           <p>Landing page modern menggunakan React.</p>
           <a href="#" class="btn-secondary">Lihat</a>
         </div>
         <div class="project-card" data-category="web">
+          <img src="img/project4.png" alt="Project 4">
           <h3>Project 4</h3>
           <p>Blog sederhana HTML & CSS.</p>
           <a href="#" class="btn-secondary">Lihat</a>
