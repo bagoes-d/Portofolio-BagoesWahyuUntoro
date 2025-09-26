@@ -97,29 +97,37 @@ filterBtns.forEach(btn => {
 /* EmailJS Contact Form          */
 /* ============================= */
 const SERVICE_ID = "service_23790fp";   // ganti dengan milikmu
-const TEMPLATE_ID = "template_edix562"; // ganti dengan milikmu
-const PUBLIC_KEY = "Sw_LTJWEIoqWziK5B"; // ganti dengan milikmu
+const TEMPLATE_ID = "template_67fqj64"; // ganti dengan milikmu
+const PUBLIC_KEY = "mjsd1M9pgFcwyWDVC"; // ganti dengan milikmu
 
-if (emailjs) emailjs.init(PUBLIC_KEY);
+// Pastikan EmailJS sudah dimuat
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof emailjs !== "undefined") {
+    emailjs.init(PUBLIC_KEY);
+  } else {
+    console.error("EmailJS belum dimuat. Pastikan script CDN sudah ditambahkan di index.html");
+  }
+});
 
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-  statusEl.textContent = "Mengirim pesan...";
-  statusEl.className = "form-status";
+if (form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    statusEl.textContent = "⏳ Sedang mengirim...";
+    statusEl.className = "form-status loading";
 
-  emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, this)
-    .then(() => {
-      statusEl.textContent = "Pesan berhasil dikirim! ✅";
-      statusEl.className = "form-status success";
-      form.reset();
-    })
-    .catch(err => {
-      statusEl.textContent = "Gagal mengirim pesan ❌";
-      statusEl.className = "form-status error";
-      console.error("EmailJS Error:", err);
-    });
-});
-
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, this)
+      .then(() => {
+        statusEl.textContent = "✅ Pesan berhasil dikirim!";
+        statusEl.className = "form-status success";
+        form.reset();
+      })
+      .catch(err => {
+        statusEl.textContent = "❌ Gagal mengirim pesan!";
+        statusEl.className = "form-status error";
+        console.error("EmailJS Error:", err);
+      });
+  });
+}
