@@ -96,7 +96,7 @@ filterBtns.forEach(btn => {
 /* ============================= */
 /* EmailJS Contact Form          */
 /* ============================= */
-const SERVICE_ID = "service_59f9cfn";   // ganti dengan milikmu
+const SERVICE_ID = "service_23790fp";   // ganti dengan milikmu
 const TEMPLATE_ID = "template_edix562"; // ganti dengan milikmu
 const PUBLIC_KEY = "Sw_LTJWEIoqWziK5B"; // ganti dengan milikmu
 
