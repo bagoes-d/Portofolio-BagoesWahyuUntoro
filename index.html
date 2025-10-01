@@ -111,43 +111,62 @@
   </section>
 
     <!-- Certificates Section -->
-  <section id="certificates" class="certificates">
-    <div class="container reveal">
-      <h2 class="section-title">Certificates</h2>
-      <div class="certificates-grid">
-        <div class="certificate-card">
-          <img src="serti/Sertifikat1.jpg" alt="Certificate 1">
-          <h3>Belajar Dasar Pemrograman Web</h3>
-          <p>Dicoding Indonesia - 2024/2027</p>
-          <a href="#" class="btn-secondary" target="_blank">Lihat Sertifikat</a>
-        </div>
-        <div class="certificate-card">
-          <img src="serti/Sertifikat2.jpg" alt="Certificate 2">
-          <h3>Sekretaris OSIS</h3>
-          <p>SMK Bintang Nusantara School - 2022/2024</p>
-          <a href="#" class="btn-secondary" target="_blank">Lihat Sertifikat</a>
-        </div>
-        <div class="certificate-card">
-          <img src="serti/Sertifikat3.jpg" alt="Certificate 3">
-          <h3>Participation Certificate – UNIMY</h3>
-          <p>University Malaysia of Computer Science & Engineering - 2025</p>
-          <a href="#" class="btn-secondary" target="_blank">Lihat Sertifikat</a>
-        </div>
-        <div class="certificate-card">
-          <img src="serti/Sertifikat4.jpg" alt="Certificate 4">
-          <h3>Belajar Dasar AI</h3>
-          <p>Dicoding Indonesia - 2025/2028</p>
-          <a href="#" class="btn-secondary" target="_blank">Lihat Sertifikat</a>
-        </div>
-        <div class="certificate-card">
-          <img src="serti/Sertifikat5.jpg" alt="Certificate 4">
-          <h3>Accelerate your IT career in the AI revolution</h3>
-          <p>Universitas Muhammadiyah Tangerang</p>
-          <a href="#" class="btn-secondary" target="_blank">Lihat Sertifikat</a>
-        </div>
+<section id="certificates" class="certificates">
+  <div class="container reveal">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certificates-grid">
+      
+      <div class="certificate-card">
+        <img src="serti/Sertifikat1.jpg" alt="Certificate 1">
+        <h3>Belajar Dasar Pemrograman Web</h3>
+        <p>Dicoding Indonesia - 2024/2027</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat1.jpg')">Lihat Sertifikat</a>
+      </div>
+
+      <div class="certificate-card">
+        <img src="serti/Sertifikat2.jpg" alt="Certificate 2">
+        <h3>Sekretaris OSIS</h3>
+        <p>SMK Bintang Nusantara School - 2022/2024</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat2.jpg')">Lihat Sertifikat</a>
+      </div>
+
+      <div class="certificate-card">
+        <img src="serti/Sertifikat3.jpg" alt="Certificate 3">
+        <h3>Participation Certificate – UNIMY</h3>
+        <p>University Malaysia of Computer Science & Engineering - 2025</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat3.jpg')">Lihat Sertifikat</a>
+      </div>
+
+      <div class="certificate-card">
+        <img src="serti/Sertifikat4.jpg" alt="Certificate 4">
+        <h3>Belajar Dasar AI</h3>
+        <p>Dicoding Indonesia - 2025/2028</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat4.jpg')">Lihat Sertifikat</a>
+      </div>
+
+      <div class="certificate-card">
+        <img src="serti/Sertifikat5.jpg" alt="Certificate 5">
+        <h3>Accelerate your IT career in the AI revolution</h3>
+        <p>Universitas Muhammadiyah Tangerang</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat5.jpg')">Lihat Sertifikat</a>
+      </div>
+
+      <div class="certificate-card">
+        <img src="serti/Sertifikat6.jpg" alt="Certificate 6">
+        <h3>Belajar Coding dari nol untuk pemula</h3>
+        <p>Coding Studio</p>
+        <a href="#" class="btn-secondary" onclick="openModal('serti/Sertifikat6.jpg')">Lihat Sertifikat</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Modal PopUp -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
 
 
   <!-- Contact Section -->

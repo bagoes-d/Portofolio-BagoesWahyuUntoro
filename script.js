@@ -132,3 +132,25 @@ if (form) {
       });
   });
 }
+
+/* ============================= */
+/* Modal Sertifikat              */
+/* ============================= */
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+
+function openModal(imgSrc) {
+  modal.style.display = "block";
+  modalImg.src = imgSrc;
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Tutup modal kalau klik area luar gambar
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
