@@ -18,6 +18,8 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -55,8 +57,6 @@
       <button class="skill-btn html">HTML</button>
       <button class="skill-btn css">CSS</button>
       <button class="skill-btn js">JavaScript</button>
-      <button class="skill-btn react">React</button>
-      <button class="skill-btn tailwind">Tailwind</button>
       <button class="skill-btn git">Git & GitHub</button>
     </div>
   </section>
@@ -72,43 +72,70 @@
   </div>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container reveal">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="project-filters">
-        <button data-filter="all" class="active">All</button>
-        <button data-filter="web">Web</button>
-        <button data-filter="js">JavaScript</button>
-        <button data-filter="react">React</button>
+<section id="projects" class="projects">
+  <div class="container reveal">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="html">HTML</button>
+      <button data-filter="css">CSS</button>
+      <button data-filter="js">JavaScript</button>
+      <button data-filter="web">Web</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="html">
+        <img src="img/project1.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Website Barcelona Menggunakan HTML, CSS & JavaScript</p>
+        <a href="https://umt-reg-24552010157-bagoeswahyuuntoro.netlify.app/" target="_blank">Lihat</a>
       </div>
-      <div class="projects-grid">
-        <div class="project-card" data-category="web">
-          <img src="img/project1.png" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Website portfolio sederhana dengan HTML, CSS, dan JS.</p>
-          <a href="#" class="btn-secondary">Lihat</a>
-        </div>
-        <div class="project-card" data-category="js">
-          <img src="img/project2.png" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Aplikasi To-Do List interaktif dengan JavaScript.</p>
-          <a href="#" class="btn-secondary">Lihat</a>
-        </div>
-        <div class="project-card" data-category="react">
-          <img src="img/project3.png" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Landing page modern menggunakan React.</p>
-          <a href="#" class="btn-secondary">Lihat</a>
-        </div>
-        <div class="project-card" data-category="web">
-          <img src="img/project4.png" alt="Project 4">
-          <h3>Project 4</h3>
-          <p>Blog sederhana HTML & CSS.</p>
-          <a href="#" class="btn-secondary">Lihat</a>
-        </div>
+      <div class="project-card" data-category="js">
+        <img src="img/project2.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Aplikasi To-Do List interaktif dengan JavaScript.</p>
+        <a href="#" class="btn-secondary">Lihat</a>
+      </div>
+      <div class="project-card" data-category="css">
+        <img src="img/project3.png" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Landing page modern dengan HTML & CSS.</p>
+        <a href="#" class="btn-secondary">Lihat</a>
+      </div>
+      <div class="project-card" data-category="web">
+        <img src="img/project4.png" alt="Project 4">
+        <h3>Project 4</h3>
+        <p>Blog sederhana HTML & CSS.</p>
+        <a href="#" class="btn-secondary">Lihat</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Pendidikan Section -->
+<section id="education" class="education">
+  <div class="container reveal">
+    <h2 class="section-title">Pendidikan</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <h3>Universitas Muhammadiyah Tangerang</h3>
+        <p>S1 - Teknik Informatika (2024 - Sekarang)</p>
+      </div>
+      <div class="education-card">
+        <h3>SMK Bintang Nusantara School</h3>
+        <p>Teknik Komputer dan Jaringan (2021 - 2024)</p>
+      </div>
+      <div class="education-card">
+        <h3>SMP Negri 2 Sepatan</h3>
+        <p>(2018 - 2021)</p>
+      </div>
+      <div class="education-card">
+        <h3>SDN Tanah Merah 1</h3>
+        <p>(2012 - 2018)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Certificates Section -->
 <section id="certificates" class="certificates">

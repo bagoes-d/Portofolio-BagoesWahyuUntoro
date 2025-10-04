@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: #111;
+  background: #0d1b2a; /* biru gelap */
   color: #f5f5f5;
   line-height: 1.6;
 }
@@ -24,8 +24,8 @@ body {
 /* Navbar                        */
 /* ============================= */
 .navbar {
-  background: #111;
-  border-bottom: 1px solid #222;
+  background: #0d1b2a; /* biru gelap */
+  border-bottom: 1px solid #112a46;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -63,7 +63,7 @@ body {
 
 .menu-toggle {
   display: none;
-  background: #222;
+  background: #112a46;
   border: none;
   color: #f5f5f5;
   padding: 0.4rem 0.6rem;
@@ -79,7 +79,7 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 90vh;
-  background: #0d0d0d;
+  background: #0d1b2a;
   padding: 2rem;
   gap: 2rem;
 }
@@ -122,7 +122,7 @@ body {
 .btn-primary {
   background: #4ade80;
   border: 1px solid #4ade80;
-  color: #111;
+  color: #0d1b2a;
 }
 
 .btn-primary:hover {
@@ -131,7 +131,7 @@ body {
 }
 
 .btn-secondary {
-  border: 1px solid #333;
+  border: 1px solid #112a46;
   color: #ddd;
 }
 
@@ -186,7 +186,7 @@ body {
 /* ============================= */
 .skills {
   padding: 4rem 0;
-  background: #181818;
+  background: #112a46;
 }
 
 .skills-tags {
@@ -285,6 +285,7 @@ body {
 /* ============================= */
 .projects {
   padding: 4rem 0;
+  background: #0d1b2a;
 }
 
 .project-filters {
@@ -298,7 +299,7 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background: #222;
+  background: #112a46;
   color: #f5f5f5;
   transition: 0.3s;
 }
@@ -306,7 +307,7 @@ body {
 .project-filters button.active,
 .project-filters button:hover {
   background: #4ade80;
-  color: #111;
+  color: #0d1b2a;
 }
 
 .projects-grid {
@@ -316,8 +317,8 @@ body {
 }
 
 .project-card {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #112a46;
+  border: 1px solid #1e3c5e;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -328,7 +329,7 @@ body {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #1e3c5e;
 }
 
 .project-card h3 {
@@ -349,17 +350,54 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
+/* Pendidikan Section */
+.education {
+  padding: 80px 0;
+  background: #112a46;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.education-card {
+  background: #112a46;
+  border: 1px solid #1e3c5e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.education-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #4ade80;
+}
+
+.education-card p {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
 /* Certificates Section */
 .certificates {
   padding: 80px 0;
-  background: #111; /* samain warna kayak Projects */
+  background: #0d1b2a;
 }
 
 .certificates .section-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #fff; /* samain juga warna text title */
+  color: #fff;
 }
 
 .certificates-grid {
@@ -369,7 +407,7 @@ body {
 }
 
 .certificate-card {
-  background: #1a1a1a; /* sama kayak card di Projects */
+  background: #112a46;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -407,7 +445,7 @@ body {
 /* ============================= */
 .contact {
   padding: 4rem 0;
-  background: #181818;
+  background: #112a46;
 }
 
 .contact-form {
@@ -422,8 +460,8 @@ body {
 .contact-form textarea {
   padding: 0.8rem;
   border-radius: 6px;
-  border: 1px solid #333;
-  background: #111;
+  border: 1px solid #1e3c5e;
+  background: #0d1b2a;
   color: #f5f5f5;
   font-size: 0.95rem;
 }
@@ -451,10 +489,10 @@ body {
 /* Footer                        */
 /* ============================= */
 .footer {
-  border-top: 1px solid #222;
+  border-top: 1px solid #112a46;
   text-align: center;
   padding: 1rem;
-  color: #777;
+  color: #bbb;
   font-size: 0.8rem;
 }
 
@@ -479,7 +517,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-    background: #111;
+    background: #0d1b2a;
     padding: 1rem;
     border-radius: 8px;
   }
@@ -503,7 +541,7 @@ body {
 
   .hero-content {
     display: flex;
-    flex-direction: column-reverse; /* Foto turun ke bawah biar lebih natural */
+    flex-direction: column-reverse;
     align-items: center;
     gap: 1.5rem;
   }
